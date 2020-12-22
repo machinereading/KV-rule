@@ -1,0 +1,70 @@
+{
+	"input": "none",
+	"output": "none",
+
+	"inter-input": "../inter/input",
+	"inter-output": "../inter/output-kbox",
+
+	"class-parent-path": "../inter/input/class-parent.tsv",
+	"type-path": [
+		"../inter/input/type-dbpedia/type-+.tsv",
+		"../inter/input/type-dbpedia/type-tr-+.tsv",
+		"../inter/input/type-dbpedia/type-sa-+.tsv",
+		"../inter/input/type-dbpedia/type-tr-sa-+.tsv"
+	],
+
+	"inst-path-A": [
+		"../inter/input/inst-kbox/baseline/inst-mo-idrfp.tsv",
+		"../inter/input/inst-kbox/initial/inst-oj-idrfp.tsv"
+	],
+	"inst-path-B": [
+		"../inter/input/inst-kbox/baseline/inst-mo.tsv",
+		"../inter/input/inst-kbox/initial/inst-oj.tsv",
+		"../inter/input/inst-kbox/baseline/inst-ml.tsv",
+		"../inter/input/inst-kbox/initial/inst-dt.tsv"
+	],
+	"inst-path-C": [
+		"../inter/input/inst-kbox/baseline/inst-mo.tsv",
+		"../inter/input/inst-kbox/initial/inst-oj.tsv",
+		"../inter/input/inst-kbox/baseline/inst-ml.tsv",
+		"../inter/input/inst-kbox/initial/inst-dt.tsv"
+	],
+
+	"r-prefix": "http://ko.dbpedia.org/resource/",
+	"o-prefix": "http://dbpedia.org/ontology/",
+
+	"p-path": ["../inter/input/P-35.json"],
+
+	"use-OT": true,
+	"use-MST": true,
+
+	"use-LCWA": false,
+	"use-ELCWA": true,
+	"use-DLCWA": true,
+
+	"use-S": true,
+	"use-F": true,
+	"s-threshold": 0.0,
+	
+	"e-size": 10000,
+	"n-rate": 2,
+	"m-size": 5,
+	"n-size": 1000,
+
+	"weight": "constr-weight",
+
+	"max-distance-A": 3,
+	
+	"max-path-len": 3,
+	"a": 0.1,
+	"b": 0.9,
+	"c": 0.25,
+	"min-cover": 2,
+	"min-penalty": 0.5,
+
+	"evidence-type": "PN",
+
+	"ip": "143.248.135.194",
+	"port": "7701",
+	"process-num": 10
+}

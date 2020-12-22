@@ -1,0 +1,63 @@
+{
+	"input": "none",
+	"output": "none",
+
+	"inter-input": "../inter/input",
+	"inter-output": "../inter/output-dben",
+
+	"class-parent-path": "../inter/input/class-parent.tsv",
+	"type-path": [
+		"../inter/input/type-dbpedia/type-en-+.tsv",
+		"../inter/input/type-dbpedia/type-tr-en-+.tsv"
+	],
+
+	"inst-path-A": [
+		"../inter/input/inst-KS-KL-PP/inst-mo-en-idrfp.tsv"
+	],
+	"inst-path-B": [
+		"../inter/input/inst-KS-KL-PP/inst-mo-en.tsv",
+		"../inter/input/inst-dbpedia/inst-ml-en.tsv"
+	],
+	"inst-path-C": [
+		"../inter/input/inst-KS-KL-PP/inst-mo-en.tsv",
+		"../inter/input/inst-dbpedia/inst-ml-en.tsv"
+	],
+
+	"r-prefix": "http://dbpedia.org/resource/",
+	"o-prefix": "http://dbpedia.org/ontology/",
+
+	"p-path": ["../inter/input/P-real.json", "../inter/input/P-synt.json"],
+
+	"use-OT": true,
+	"use-MST": true,
+
+	"use-LCWA": false,
+	"use-ELCWA": true,
+	"use-DLCWA": true,
+
+	"use-S": true,
+	"use-F": true,
+	"s-threshold": 0.0,
+	
+	"e-size": 10000,
+	"n-rate": 2,
+	"m-size": 5,
+	"n-size": 1000,
+
+	"weight": "constr-weight",
+
+	"max-distance-A": 3,
+	
+	"max-path-len": 3,
+	"a": 0.1,
+	"b": 0.9,
+	"c": 0.25,
+	"min-cover": 10,
+	"min-penalty": 0.5,
+
+	"evidence-type": "PN",
+
+	"ip": "143.248.135.194",
+	"port": "7702",
+	"process-num": 10
+}
