@@ -16,13 +16,13 @@ In contrast, the triple (Wozniak, birthPlace, Florida) is assigned the low truth
 
 ## Data preparation
 
-1. Download the compressed folder `inter.tar.bz2` ([Link](https://drive.google.com/file/d/1fv0-V-QDI5bHqQaSZapGZw-UCHS_N0O-/view?usp=sharing)).
+1. Download the compressed dataset `inter.tar.bz2` ([Link](https://drive.google.com/file/d/1fv0-V-QDI5bHqQaSZapGZw-UCHS_N0O-/view?usp=sharing)).
 
-2. The compressed folder `inter.tar.bz2` contains the knowledge graphs, English DBpedia and K-Box, and the pre-trained positive and negative rules.
+2. The compressed dataset `inter.tar.bz2` contains the knowledge graphs, English DBpedia and K-Box, and the pre-trained positive and negative rules.
 
-3. Unzip the compressed folder `inter.tar.bz2` by the command `tar -jxvf inter.tar.bz2`.
+3. Unzip the compressed dataset `inter.tar.bz2` by the command `tar -jxvf inter.tar.bz2`.
 
-4. Locate all the folders in the unzipped folder `inter` into the directory `inter` in the main repository.
+4. Locate all the contents in the unzipped dataset into the directory `inter`.
 
 ## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
