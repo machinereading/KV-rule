@@ -37,4 +37,4 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 Jiseong Kim. `jiseong@kaist.ac.kr`, `jiseong@gmail.com`
 
 ## Acknowledgement
-This work was supported by Institute of Information & Communications Technology Planning & Evaluation(IITP) grant funded by the Korea government(MSIT) (2013-2-00109, WiseKB: Big data based self-evolving knowledge base and reasoning platform)
+This work was supported by Institute of Information & Communications Technology Planning & Evaluation(IITP) grant funded by the Korea government(MSIT) (2013-2-00109, WiseKB: Big data based self-evolving knowledge base and reasoning platform).
