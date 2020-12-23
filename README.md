@@ -18,7 +18,7 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 
 1. Download the compressed dataset `inter.tar.bz2` ([Link](https://drive.google.com/file/d/1fv0-V-QDI5bHqQaSZapGZw-UCHS_N0O-/view?usp=sharing)).
 
-2. The compressed dataset `inter.tar.bz2` contains the knowledge graphs, English DBpedia and K-Box, and the pre-trained positive and negative rules.
+2. The compressed dataset `inter.tar.bz2` contains the pre-processed knowledge graphs, English DBpedia and K-Box, and the pre-trained positive and negative rules.
 
 3. Unzip the compressed dataset `inter.tar.bz2` by the command `tar -jxvf inter.tar.bz2`.
 
