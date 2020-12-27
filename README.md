@@ -60,7 +60,7 @@ Albert_Einstein	nationality	Venezuela	0.7225167109516941
 Albert_Einstein	nationality	Iran	0.7180768931575049
 ```
 
-**E.** If you want to calculate a truth score for an English DBpedia-style triple, set a configuration file (CONF_FILE_PATH) as `conf/conf-dben.json`. Or, If you want to calculate a truth score for a K-Box-style triple, set a configuration file (CONF_FILE_PATH) as `conf/conf-kbox.json`.
+**E.** If you want to calculate a truth score for an English DBpedia-style triple, set a configuration file (CONF_FILE_PATH) as `conf/conf-dben.json`. Or, if you want to calculate a truth score for a K-Box-style triple, set a configuration file (CONF_FILE_PATH) as `conf/conf-kbox.json`.
 
 ## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
