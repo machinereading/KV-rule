@@ -28,7 +28,7 @@ D) Locate all the contents in the unzipped dataset into the directory `inter` in
 
 ### 2. Calculate the truth scores for the given triples
 
-A) Calculate a truth score for a given triple by the following command:
+A truth score for a given triple is calculated by the following command:
 ```
 python3 filter.py -i INPUT_FILE_PATH -o OUTPUT_FILE_PATH -cn CONFIG_FILE_PATH
 ```
