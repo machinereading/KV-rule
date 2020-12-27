@@ -28,15 +28,15 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 
 ### 2. Calculate a truth score for a given triple
 
-A. Go to the directory `code` by the command `cd code` from the main directory of `KV-rule`.
+**A.** Go to the directory `code` by the command `cd code` from the main directory of `KV-rule`.
 
-B. Calculate a truth score for a given triple by the following command.
+**B.** Calculate a truth score for a given triple by the following command.
 
 ```
 python3 filter.py -i INPUT_FILE_PATH -o OUTPUT_FILE_PATH -cn CONFIG_FILE_PATH
 ```
 
-C. An input file (INPUT_FILE_PATH) contains a set of triples in the format of tab-separated-values (TSV), as follows.
+**C.** An input file (INPUT_FILE_PATH) contains a set of triples in the format of tab-separated-values (TSV), as follows.
 ```
 Alanis_Morissette	nationality	Canada
 Alanis_Morissette	nationality	United_Kingdom
@@ -48,7 +48,7 @@ Albert_Einstein	nationality	Venezuela
 Albert_Einstein	nationality	Iran
 ```
 
-D. An output file (OUTPUT_FILE_PATH) contains a set of triples and the corresponding truth scores in the format of TSV, as follows.
+**D.** An output file (OUTPUT_FILE_PATH) contains a set of triples and the corresponding truth scores in the format of TSV, as follows.
 ```
 Alanis_Morissette	nationality	Canada	1.0
 Alanis_Morissette	nationality	United_Kingdom	0.9216958227441079
@@ -60,9 +60,7 @@ Albert_Einstein	nationality	Venezuela	0.7225167109516941
 Albert_Einstein	nationality	Iran	0.7180768931575049
 ```
 
-E. Set a configuration file (CONF_FILE_PATH) as `conf/conf-dben.json`, if an input file contains English DBpedia-style triples.
-
-Or, set a configuration file (CONF_FILE_PATH) as `conf/conf-kbox.json`, if an input file contains K-Box-style triples.
+**E.** If you want to calculate a truth score for an English DBpedia-style triple, set a configuration file (CONF_FILE_PATH) as `conf/conf-dben.json`. Or, If you want to calculate a truth score for a K-Box-style triple, set a configuration file (CONF_FILE_PATH) as `conf/conf-kbox.json`.
 
 ## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
