@@ -33,7 +33,7 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 **B.** Calculate a truth score for a given triple by the following command.
 
 ```
-python3 filter.py -i INPUT_FILE_PATH -o OUTPUT_FILE_PATH -cn CONFIG_FILE_PATH
+python3 filter.py -i INPUT_FILE_PATH -o OUTPUT_DIR_PATH -cn CONFIG_FILE_PATH
 ```
 
 **C.** An input file (INPUT_FILE_PATH) contains a set of triples in the format of tab-separated-values (TSV), as follows.
@@ -48,7 +48,7 @@ Albert_Einstein	nationality	Venezuela
 Albert_Einstein	nationality	Iran
 ```
 
-**D.** An output file (OUTPUT_FILE_PATH) contains a set of triples and the corresponding truth scores in the format of TSV, as follows.
+**D.** An output directory (OUTPUT_DIR_PATH) contains the result file `result-scored.tsv` that contains a set of triples and the corresponding truth scores in the format of TSV, as follows.
 ```
 Alanis_Morissette	nationality	Canada	1.0
 Alanis_Morissette	nationality	United_Kingdom	0.9216958227441079
