@@ -20,7 +20,7 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 
 A. Download the compressed dataset `inter.tar.bz2` ([Link](https://drive.google.com/file/d/1fv0-V-QDI5bHqQaSZapGZw-UCHS_N0O-/view?usp=sharing)).
 
-B. The compressed dataset `inter.tar.bz2` contains the pre-processed knowledge graphs, [English DBpedia](https://wiki.dbpedia.org/develop/datasets/downloads-2016-10) and [K-Box](http://kbox.kaist.ac.kr), and the pre-trained positive and negative rules.
+B. The compressed dataset `inter.tar.bz2` contains the pre-processed knowledge graphs ([English DBpedia](https://wiki.dbpedia.org/develop/datasets/downloads-2016-10) and [K-Box](http://kbox.kaist.ac.kr)) and the pre-trained positive and negative rules.
 
 C. Unzip the compressed dataset `inter.tar.bz2` by the command `tar -jxvf inter.tar.bz2`.
 
@@ -48,7 +48,7 @@ Albert_Einstein	nationality	Venezuela
 Albert_Einstein	nationality	Iran
 ```
 
-D. An output file (OUTPUT_FILE_PATH) contains a set of triples and their truth scores in the format of TSV, as follows.
+D. An output file (OUTPUT_FILE_PATH) contains a set of triples and the corresponding truth scores in the format of TSV, as follows.
 ```
 Alanis_Morissette	nationality	Canada	1.0
 Alanis_Morissette	nationality	United_Kingdom	0.9216958227441079
