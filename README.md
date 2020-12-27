@@ -1,4 +1,4 @@
-# KV-rule: Fact checking by positive and negative rules
+# KV-rule
 
 ## About
 
@@ -28,7 +28,7 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 
 ### Calculate a truth score for a given triple
 
-**1.** Go to the directory `code` by the command `cd code` from the main directory of `KV-rule`.
+**1.** Go to the directory `code` in the main directory of `KV-rule` by the command `cd code`.
 
 **2.** Calculate a truth score for a given triple by the following command:
 
