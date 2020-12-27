@@ -30,13 +30,13 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 
 **A.** Go to the directory `code` by the command `cd code` from the main directory of `KV-rule`.
 
-**B.** Calculate a truth score for a given triple by the following command.
+**B.** Calculate a truth score for a given triple by the following command:
 
 ```
 python3 filter.py -i INPUT_FILE_PATH -o OUTPUT_DIR_PATH -cn CONFIG_FILE_PATH
 ```
 
-An input file (INPUT_FILE_PATH) should contain a set of triples in the format of tab-separated-values (TSV), as follows.
+An input file (INPUT_FILE_PATH) should contain a set of triples in the format of tab-separated-values (TSV), as follows:
 ```
 Alanis_Morissette	nationality	Canada
 Alanis_Morissette	nationality	United_Kingdom
@@ -48,7 +48,7 @@ Albert_Einstein	nationality	Venezuela
 Albert_Einstein	nationality	Iran
 ```
 
-An output directory (OUTPUT_DIR_PATH) would contain the result file `result-scored.tsv` that contains a set of triples and calculated truth scores in the format of TSV, as follows.
+An output directory (OUTPUT_DIR_PATH) would contain the result file `result-scored.tsv` that contains a set of triples and calculated truth scores in the format of TSV, as follows:
 ```
 Alanis_Morissette	nationality	Canada	1.0
 Alanis_Morissette	nationality	United_Kingdom	0.9216958227441079
