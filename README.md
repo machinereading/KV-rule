@@ -33,7 +33,7 @@ a) Calculate the truth scores for the given triples by the following command:
 python3 filter.py -i INPUT_FILE_PATH -o OUTPUT_FILE_PATH -cn CONFIG_FILE_PATH
 ```
 
-An input file (INPUT_FILE_PATH) contains a set of triples in the format of tab-separated-values (TSV), as follows.
+An input file (INPUT_FILE_PATH) should contain a set of triples in the format of tab-separated-values (TSV), as follows.
 ```
 Alanis_Morissette	nationality	Canada
 Alanis_Morissette	nationality	United_Kingdom
@@ -57,9 +57,9 @@ Albert_Einstein	nationality	Venezuela	0.7225167109516941
 Albert_Einstein	nationality	Iran	0.7180768931575049
 ```
 
-If you set a configuration file (CONFIG_FILE_PATH) by `conf/conf-dben.json`, you can use the rules learned using English DBpedia.
+If you set a configuration file (CONFIG_FILE_PATH) as `conf/conf-dben.json`, then you can use the rules learned using English DBpedia.
 
-If you set a configuration file (CONFIG_FILE_PATH) by `conf/conf-kbox.json`, you can use the rules learned using K-Box.
+Or, if you set a configuration file (CONFIG_FILE_PATH) as `conf/conf-kbox.json`, you can use the rules learned using K-Box.
 
 ## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
