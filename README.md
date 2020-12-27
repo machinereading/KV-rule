@@ -18,13 +18,13 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 
 ### 1. Download the pretrained positive and negative rules
 
-A. Download the compressed dataset `inter.tar.bz2` ([Link](https://drive.google.com/file/d/1fv0-V-QDI5bHqQaSZapGZw-UCHS_N0O-/view?usp=sharing)).
+**A.** Download the compressed dataset `inter.tar.bz2` ([Link](https://drive.google.com/file/d/1fv0-V-QDI5bHqQaSZapGZw-UCHS_N0O-/view?usp=sharing)).
 
-B. The compressed dataset `inter.tar.bz2` contains the pre-processed knowledge graphs ([English DBpedia](https://wiki.dbpedia.org/develop/datasets/downloads-2016-10) and [K-Box](http://kbox.kaist.ac.kr)) and the pre-trained positive and negative rules.
+**B.** The compressed dataset `inter.tar.bz2` contains the pre-processed knowledge graphs ([English DBpedia](https://wiki.dbpedia.org/develop/datasets/downloads-2016-10) and [K-Box](http://kbox.kaist.ac.kr)) and the pre-trained positive and negative rules.
 
-C. Unzip the compressed dataset `inter.tar.bz2` by the command `tar -jxvf inter.tar.bz2`.
+**C.** Unzip the compressed dataset `inter.tar.bz2` by the command `tar -jxvf inter.tar.bz2`.
 
-D. Locate all the contents in the unzipped dataset into the directory `inter` in the main directory of `KV-rule`.
+**D.** Locate all the contents in the unzipped dataset into the directory `inter` in the main directory of `KV-rule`.
 
 ### 2. Calculate a truth score for a given triple
 
