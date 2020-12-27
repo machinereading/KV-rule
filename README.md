@@ -18,22 +18,22 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 
 ### 1. Download the pretrained positive and negative rules
 
-a) Download the compressed dataset `inter.tar.bz2` ([Link](https://drive.google.com/file/d/1fv0-V-QDI5bHqQaSZapGZw-UCHS_N0O-/view?usp=sharing)).
+A) Download the compressed dataset `inter.tar.bz2` ([Link](https://drive.google.com/file/d/1fv0-V-QDI5bHqQaSZapGZw-UCHS_N0O-/view?usp=sharing)).
 
-b) The compressed dataset `inter.tar.bz2` contains the pre-processed knowledge graphs, [English DBpedia](https://wiki.dbpedia.org/develop/datasets/downloads-2016-10) and [K-Box](http://kbox.kaist.ac.kr), and the pre-trained positive and negative rules.
+B) The compressed dataset `inter.tar.bz2` contains the pre-processed knowledge graphs, [English DBpedia](https://wiki.dbpedia.org/develop/datasets/downloads-2016-10) and [K-Box](http://kbox.kaist.ac.kr), and the pre-trained positive and negative rules.
 
-c) Unzip the compressed dataset `inter.tar.bz2` by the command `tar -jxvf inter.tar.bz2`.
+C) Unzip the compressed dataset `inter.tar.bz2` by the command `tar -jxvf inter.tar.bz2`.
 
-d) Locate all the contents in the unzipped dataset into the directory `inter` in the main directory of `KV-rule`.
+D) Locate all the contents in the unzipped dataset into the directory `inter` in the main directory of `KV-rule`.
 
 ### 2. Calculate the truth scores for the given triples
 
-a) Calculate the truth scores for the given triples by the following command:
+A) Calculate a truth score for a given triple by the following command:
 ```
 python3 filter.py -i INPUT_FILE_PATH -o OUTPUT_FILE_PATH -cn CONFIG_FILE_PATH
 ```
 
-An input file (INPUT_FILE_PATH) should contain a set of triples in the format of tab-separated-values (TSV), as follows.
+An input file (INPUT_FILE_PATH) contains a set of triples in the format of tab-separated-values (TSV), as follows.
 ```
 Alanis_Morissette	nationality	Canada
 Alanis_Morissette	nationality	United_Kingdom
@@ -45,7 +45,7 @@ Albert_Einstein	nationality	Venezuela
 Albert_Einstein	nationality	Iran
 ```
 
-An output file (OUTPUT_FILE_PATH) contains a set of triples and their truth scores in the format of tab-separated-values (TSV), as follows.
+An output file (OUTPUT_FILE_PATH) contains a set of triples and their truth scores in the format of TSV, as follows.
 ```
 Alanis_Morissette	nationality	Canada	1.0
 Alanis_Morissette	nationality	United_Kingdom	0.9216958227441079
@@ -57,9 +57,9 @@ Albert_Einstein	nationality	Venezuela	0.7225167109516941
 Albert_Einstein	nationality	Iran	0.7180768931575049
 ```
 
-If you set a configuration file (CONFIG_FILE_PATH) as `conf/conf-dben.json`, then you can calculate a truth score for an English DBpedia triple by the rules learned using English DBpedia.
+Set a configuration file (CONFIG_FILE_PATH) as `conf/conf-dben.json` if you want to calculate a truth score for a triple containing entities and properties specified in English DBpedia.
 
-Likewise, If you set a configuration file (CONFIG_FILE_PATH) as `conf/conf-kbox.json`, then you can calculate a truth score for a K-Box triple by the rules learned using K-Box.
+Or, set a configuration file (CONFIG_FILE_PATH) as `conf/conf-kbox.json` if you want to calculate a truth score for a triple containing entities and properties specified in K-Box.
 
 ## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
