@@ -36,7 +36,7 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 python3 filter.py -i INPUT_FILE_PATH -o OUTPUT_DIR_PATH -cn CONFIG_FILE_PATH
 ```
 
-**C.** An input file (INPUT_FILE_PATH) contains a set of triples in the format of tab-separated-values (TSV), as follows.
+An input file (INPUT_FILE_PATH) should contain a set of triples in the format of tab-separated-values (TSV), as follows.
 ```
 Alanis_Morissette	nationality	Canada
 Alanis_Morissette	nationality	United_Kingdom
@@ -48,7 +48,7 @@ Albert_Einstein	nationality	Venezuela
 Albert_Einstein	nationality	Iran
 ```
 
-**D.** An output directory (OUTPUT_DIR_PATH) contains the result file `result-scored.tsv` that contains a set of triples and the corresponding truth scores in the format of TSV, as follows.
+An output directory (OUTPUT_DIR_PATH) would contain the result file `result-scored.tsv` that contains a set of triples and calculated truth scores in the format of TSV, as follows.
 ```
 Alanis_Morissette	nationality	Canada	1.0
 Alanis_Morissette	nationality	United_Kingdom	0.9216958227441079
@@ -60,7 +60,9 @@ Albert_Einstein	nationality	Venezuela	0.7225167109516941
 Albert_Einstein	nationality	Iran	0.7180768931575049
 ```
 
-**E.** If you want to calculate a truth score for an English DBpedia-style triple, set a configuration file (CONF_FILE_PATH) as `conf/conf-dben.json`. Or, if you want to calculate a truth score for a K-Box-style triple, set a configuration file (CONF_FILE_PATH) as `conf/conf-kbox.json`.
+If you want to calculate a truth score for an English DBpedia-style triple, set a configuration file (CONF_FILE_PATH) as `conf/conf-dben.json`. 
+
+Or, if you want to calculate a truth score for a K-Box-style triple, set a configuration file (CONF_FILE_PATH) as `conf/conf-kbox.json`.
 
 ## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
