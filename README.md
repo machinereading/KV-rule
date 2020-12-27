@@ -16,21 +16,21 @@ In contrast, the triple `(Wozniak, birthPlace, Florida)` is assigned the low tru
 
 ## How to use
 
-### 1. Download the pretrained positive and negative rules
+### Download the pretrained positive and negative rules
 
-**A.** Download the compressed dataset `inter.tar.bz2` ([Link](https://drive.google.com/file/d/1fv0-V-QDI5bHqQaSZapGZw-UCHS_N0O-/view?usp=sharing)).
+**1.** Download the compressed dataset `inter.tar.bz2` ([Link](https://drive.google.com/file/d/1fv0-V-QDI5bHqQaSZapGZw-UCHS_N0O-/view?usp=sharing)).
 
-**B.** The compressed dataset `inter.tar.bz2` contains the pre-processed knowledge graphs ([English DBpedia](https://wiki.dbpedia.org/develop/datasets/downloads-2016-10) and [K-Box](http://kbox.kaist.ac.kr)) and the pre-trained positive and negative rules.
+**2.** The compressed dataset `inter.tar.bz2` contains the pre-processed knowledge graphs ([English DBpedia](https://wiki.dbpedia.org/develop/datasets/downloads-2016-10) and [K-Box](http://kbox.kaist.ac.kr)) and the pre-trained positive and negative rules.
 
-**C.** Unzip the compressed dataset `inter.tar.bz2` by the command `tar -jxvf inter.tar.bz2`.
+**3.** Unzip the compressed dataset `inter.tar.bz2` by the command `tar -jxvf inter.tar.bz2`.
 
-**D.** Locate all the contents in the unzipped dataset into the directory `inter` in the main directory of `KV-rule`.
+**4.** Locate all the contents in the unzipped dataset into the directory `inter` in the main directory of `KV-rule`.
 
-### 2. Calculate a truth score for a given triple
+### Calculate a truth score for a given triple
 
-**A.** Go to the directory `code` by the command `cd code` from the main directory of `KV-rule`.
+**1.** Go to the directory `code` by the command `cd code` from the main directory of `KV-rule`.
 
-**B.** Calculate a truth score for a given triple by the following command:
+**2.** Calculate a truth score for a given triple by the following command:
 
 ```
 python3 filter.py -i INPUT_FILE_PATH -o OUTPUT_DIR_PATH -cn CONFIG_FILE_PATH
