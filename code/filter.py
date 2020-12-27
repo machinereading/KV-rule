@@ -204,13 +204,9 @@ class RF:
 
 		self.evidence_type = conf['evidence-type']
 
-		try:
-			self.score_threshold_A = conf['score-threshold-A']
-			self.score_threshold_B = conf['score-threshold-B']
+		self.score_threshold_A = conf['score-threshold-A']
+		self.score_threshold_B = conf['score-threshold-B']
 
-		except:
-			pass
-			
 		# --
 
 		from learn import Rule_Model
@@ -524,14 +520,33 @@ class RF:
 				return [self.F, score]
 
 		# --
+		
+		elif used_for in ['demo-flagship']:
+			if len(p_evidence) > 0:
+				return [self.T, score, i_p]
 
+			# --
+
+			elif len(n_evidence) > 0:
+				return [self.F, score, i_n]
+
+			# --
+
+			else:
+				return [self.F, score, '근거 없음']
+
+		# --
+		'''
 		elif used_for in ['demo-flagship']: # high recall for False
-			if score >= self.score_threshold_B:
+			if len(p_evidence) <= 0 and len(n_evidence) <= 0:
+				return [self.F, score, '근거 없음']
+
+			elif score >= self.score_threshold_B:
 				return [self.T, score, i_p]
 
 			else:
 				return [self.F, score, i_n]
-
+		'''
 	# --
 
 	def score_A(self, w):
