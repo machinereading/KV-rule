@@ -26,14 +26,17 @@ C) Unzip the compressed dataset `inter.tar.bz2` by the command `tar -jxvf inter.
 
 D) Locate all the contents in the unzipped dataset into the directory `inter` in the main directory of `KV-rule`.
 
-### 2. Calculate the truth scores for the given triples
+### 2. Calculate a truth score for a given triple
 
-A truth score for a given triple is calculated by the following command:
+A) Go to the directory `code` by the command `cd code` from the main directory of `KV-rule`.
+
+B) Calculate a truth score for a given triple by the following command.
+
 ```
 python3 filter.py -i INPUT_FILE_PATH -o OUTPUT_FILE_PATH -cn CONFIG_FILE_PATH
 ```
 
-An input file (INPUT_FILE_PATH) contains a set of triples in the format of tab-separated-values (TSV), as follows.
+C) An input file (INPUT_FILE_PATH) contains a set of triples in the format of tab-separated-values (TSV), as follows.
 ```
 Alanis_Morissette	nationality	Canada
 Alanis_Morissette	nationality	United_Kingdom
@@ -45,7 +48,7 @@ Albert_Einstein	nationality	Venezuela
 Albert_Einstein	nationality	Iran
 ```
 
-An output file (OUTPUT_FILE_PATH) contains a set of triples and their truth scores in the format of TSV, as follows.
+D) An output file (OUTPUT_FILE_PATH) contains a set of triples and their truth scores in the format of TSV, as follows.
 ```
 Alanis_Morissette	nationality	Canada	1.0
 Alanis_Morissette	nationality	United_Kingdom	0.9216958227441079
@@ -57,9 +60,9 @@ Albert_Einstein	nationality	Venezuela	0.7225167109516941
 Albert_Einstein	nationality	Iran	0.7180768931575049
 ```
 
-Set a configuration file (CONFIG_FILE_PATH) as `conf/conf-dben.json` if you want to calculate a truth score for a triple containing entities and properties specified in English DBpedia.
+E) If you want to calculate a truth score for an English DBpedia-style triple (containing entities and properties specified in English DBpedia), set a configuration file (CONF_FILE_PATH) as `conf/conf-dben.json`.
 
-Or, set a configuration file (CONFIG_FILE_PATH) as `conf/conf-kbox.json` if you want to calculate a truth score for a triple containing entities and properties specified in K-Box.
+Or, if you want to calculate a truth score for a K-Box-style triple (containing entities and properties specified in K-Box), set a configuration file (CONF_FILE_PATH) as `conf/conf-kbox.json`.
 
 ## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
