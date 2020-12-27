@@ -57,9 +57,9 @@ Albert_Einstein	nationality	Venezuela	0.7225167109516941
 Albert_Einstein	nationality	Iran	0.7180768931575049
 ```
 
-If you set a configuration file (CONFIG_FILE_PATH) as `conf/conf-dben.json`, then you can use the rules learned using English DBpedia.
+If you set a configuration file (CONFIG_FILE_PATH) as `conf/conf-dben.json`, then you can calculate a truth score for an English DBpedia triple by the rules learned using English DBpedia.
 
-Or, if you set a configuration file (CONFIG_FILE_PATH) as `conf/conf-kbox.json`, you can use the rules learned using K-Box.
+Likewise, If you set a configuration file (CONFIG_FILE_PATH) as `conf/conf-kbox.json`, then you can calculate a truth score for a K-Box triple by the rules learned using K-Box.
 
 ## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
