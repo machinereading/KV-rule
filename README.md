@@ -72,7 +72,7 @@ Or, if you want to calculate a truth score for a K-Box-style triple, set a confi
 [Machine Reading Lab](http://mrlab.kaist.ac.kr/) @ KAIST
 
 ## Contact
-Jiseong Kim. `jiseong@kaist.ac.kr`, `jiseong@gmail.com`
+Jiseong Kim. `jiseong@kaist.ac.kr`, `jiseongyee@gmail.com`
 
 ## Acknowledgement
 This work was supported by Institute of Information & Communications Technology Planning & Evaluation(IITP) grant funded by the Korea government(MSIT) (2013-2-00109, WiseKB: Big data based self-evolving knowledge base and reasoning platform).
