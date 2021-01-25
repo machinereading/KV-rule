@@ -58,6 +58,19 @@ def do_service(): # for wisekb
 		p = triple['p']
 		o = triple['o']
 
+		# -- 다크 엔티티
+
+		try:
+			import re
+			
+			re.split('/', s)[1]
+			re.split('/', o)[1]
+
+		except:
+			o_json['PL']['triples'].append(triple)
+
+			continue
+
 		# --
 
 		import re
