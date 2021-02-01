@@ -344,10 +344,10 @@ class RF:
 
 		if c1 and c2:
 			if used_for in ['eval']:
-				return [self.U, 0.0, ['규칙 없음', 0.0, 0.0, 0, 0]]
+				return [self.U, 0.5, ['규칙 없음', 0.0, 0.0, 0, 0]]
 
 			elif used_for in ['demo']:
-				return [self.U, 0.0, '규칙 없음']
+				return [self.U, 0.5, '규칙 없음']
 
 		# -- 근거 조사
 
@@ -508,7 +508,7 @@ class RF:
 			# --
 
 			else:
-				return [self.F, score, ['근거 없음', s_p, s_n, len(p_evidence), len(n_evidence)]]
+				return [self.U, score, ['근거 없음', s_p, s_n, len(p_evidence), len(n_evidence)]]
 
 		# --
 
@@ -520,7 +520,19 @@ class RF:
 				return [self.F, score]
 
 		# --
-		
+
+		elif used_for in ['demo-flagship']: # high recall for False
+			if len(p_evidence) <= 0 and len(n_evidence) <= 0:
+				return [self.U, 0.5, '근거 없음']
+
+			elif s_p >= self.score_threshold_B:
+				return [self.T, s_p, i_p]
+
+			else:
+				return [self.F, s_n, i_n]
+
+		# --
+		'''
 		elif used_for in ['demo-flagship']:
 			if len(p_evidence) > 0:
 				return [self.T, score, i_p]
@@ -534,7 +546,7 @@ class RF:
 
 			else:
 				return [self.F, score, '근거 없음']
-
+		'''
 		# --
 		'''
 		elif used_for in ['demo-flagship']: # high recall for False

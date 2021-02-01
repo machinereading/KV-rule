@@ -40,8 +40,8 @@
 	"use-OT": true,
 	"use-MST": true,
 
-	"use-LCWA": false,
-	"use-ELCWA": true,
+	"use-CWA": false,
+	"use-LCWA": true,
 	"use-DLCWA": true,
 
 	"use-S": true,
@@ -62,7 +62,7 @@
 	"a": 0.1,
 	"b": 0.9,
 	"c": 0.25,
-	"min-cover": 10,
+	"min-cover": 2,
 	"min-penalty": 0.5,
 
 	"evidence-type": "PN",
