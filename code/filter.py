@@ -296,6 +296,10 @@ class RF:
 	# --
 
 	def validate(self, s, p, o, used_for='eval'):
+		print(s, p, o)
+
+		# --
+
 		from module.RDF import RDF
 
 		RDF = RDF()
@@ -483,6 +487,8 @@ class RF:
 		s_p = self.score_A(w_p)
 		s_n = self.score_A(w_n)
 
+		print(s_p, s_n)
+
 		# --
 
 		if len(p_evidence) > 0:
@@ -493,6 +499,8 @@ class RF:
 
 		else:
 			score = self.score_B(0.0, 0.0)
+
+		print(score)
 
 		# --
 
@@ -525,7 +533,7 @@ class RF:
 			if len(p_evidence) <= 0 and len(n_evidence) <= 0:
 				return [self.U, 0.5, '근거 없음']
 
-			elif s_p >= self.score_threshold_B:
+			elif score >= self.score_threshold_B:
 				return [self.T, s_p, i_p]
 
 			else:

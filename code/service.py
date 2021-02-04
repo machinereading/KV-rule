@@ -58,6 +58,8 @@ def do_service(): # for wisekb
 		p = triple['p']
 		o = triple['o']
 
+		#print(s, p, o)
+
 		# -- 다크 엔티티
 
 		try:
@@ -78,6 +80,8 @@ def do_service(): # for wisekb
 		s_ = re.split('/', s)[0]
 		p_ = re.split('/', p)[0]
 		o_ = re.split('/', o)[0]
+
+		#print(s_, p_, o_, '\n')
 
 		# --
 
@@ -131,11 +135,11 @@ def do_service(): # for flagship
 
 	# --
 
-	label, score, evidence = rf.validate(s_, p_, o_, used_for='demo-flagship')
+	label, confidence, evidence = rf.validate(s_, p_, o_, used_for='demo-flagship')
 
 	# --
 
-	o_json = [label, score, evidence]
+	o_json = [label, confidence, evidence]
 
 	# ==
 
