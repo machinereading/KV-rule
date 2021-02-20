@@ -62,7 +62,7 @@
 	"a": 0.1,
 	"b": 0.9,
 	"c": 0.25,
-	"min-cover": 2,
+	"min-cover": 10,
 	"min-penalty": 0.5,
 
 	"evidence-type": "PN",
